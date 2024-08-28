@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handler:HandlerTypeDefinition
+    xmlns:handler="urn:com:ericsson:schema:xml:oss:fbp_handlertype"
+    xmlns="urn:com:ericsson:schema:xml:oss:fbp_flow"
+    xmlns:oss_common="urn:com:ericsson:schema:xml:oss:oss_common"
+    oss_common:ns="ECIM"
+    oss_common:name="ParseEcimNetconfPayloadHandler"
+    oss_common:version="1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <oss_common:modelCreationInfo author="Cosmos" creationDate="25/10/2021">
+        <oss_common:designedModel componentId="ParseEcimNetconfPayloadHandler" />
+    </oss_common:modelCreationInfo>
+
+    <oss_common:desc>This model is used to parse the netconf capability and rpc from a payload.</oss_common:desc>
+
+    <handler>
+        <className>com.ericsson.oss.mediation.cm.handlers.ParseEcimNetconfPayloadHandler</className>
+    </handler>
+</handler:HandlerTypeDefinition>

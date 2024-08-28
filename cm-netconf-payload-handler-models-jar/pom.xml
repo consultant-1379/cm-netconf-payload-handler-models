@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ericsson.oss.mediation.cm.handlers</groupId>
+        <artifactId>cm-netconf-payload-handler-models</artifactId>
+        <version>1.1.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>${project.parent.artifactId}-jar</artifactId>
+    <packaging>jar</packaging>
+    <name>[${project.parent.artifactId}] JAR module</name>
+    <description>This module will process annotated models.</description>
+
+    
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>model-build</directory>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
